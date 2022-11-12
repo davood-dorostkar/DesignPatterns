@@ -1,22 +1,22 @@
 #ifndef DUCK_H
 #define DUCK_H
+#include <QObject>
 #include <iostream>
 #include <FlyBehavior.h>
 #include <QuackBehavior.h>
 
 class Duck
 {
-private:
+protected:
+    FlyBehavior *flyBehavior=nullptr;
+    QuackBehavior *quackBehavior=nullptr;
 public:
-
-    FlyBehavior *flyBehavior;
-    QuackBehavior *quackBehavior;
     void performFly();
     void performQuack();
     void swim();
     virtual void display();
-//    void setFlyBehavior(FlyBehavior fb);
-//    void setQuackBehavior(QuackBehavior qb);
+    void setFlyBehavior(FlyBehavior *fb);
+    void setQuackBehavior(QuackBehavior *qb);
 };
 void Duck::performFly()
 {
@@ -26,14 +26,14 @@ void Duck::performQuack()
 {
     quackBehavior->quack();
 }
-//void Duck::setFlyBehavior(FlyBehavior fb)
-//{
-//    flyBehavior = &fb;
-//};
-//void Duck::setQuackBehavior(QuackBehavior qb)
-//{
-//    quackBehavior = &qb;
-//};
+void Duck::setFlyBehavior(FlyBehavior *fb)
+{
+    flyBehavior = fb;
+};
+void Duck::setQuackBehavior(QuackBehavior *qb)
+{
+    quackBehavior = qb;
+};
 void Duck::swim()
 {
     std::cout << "swimming" << std::endl;

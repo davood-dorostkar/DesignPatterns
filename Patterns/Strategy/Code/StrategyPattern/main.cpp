@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
     mallard->performFly();
     mallard->performQuack();
 
-//    Duck *modelDuck = new ModelDuck();
-//    modelDuck.performFly();
-//    modelDuck.setFlyBehavior(new FlyRocketPowered());
-//    modelDuck.performFly();
+    Duck *modelDuck = new ModelDuck();
+    modelDuck->performFly();
+    modelDuck->setFlyBehavior(new FlyRocketPowered());
+    modelDuck->performFly();
     return a.exec();
 }

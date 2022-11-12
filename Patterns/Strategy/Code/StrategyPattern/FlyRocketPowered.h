@@ -4,10 +4,15 @@
 #include <FlyBehavior.h>
 class FlyRocketPowered : public FlyBehavior
 {
-    void fly()
-    {
-        std::cout << "I am flying with a rocket" << std::endl;
-    }
+private:
+public:
+    FlyRocketPowered(){}
+    ~FlyRocketPowered(){}
+    void fly();
 };
-
+void FlyRocketPowered::fly()
+{
+    std::cout << "I am flying with a rocket" << std::endl;
+}
 #endif // FLYROCKETPOWERED_H
+

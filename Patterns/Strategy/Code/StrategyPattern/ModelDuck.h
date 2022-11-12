@@ -6,11 +6,16 @@
 class ModelDuck : public Duck
 {
 public:
-//    flyBehavior = new FlyNoWay();
-//    quackBehavior = new Quack();
+    ModelDuck();
     void display()
     {
         std::cout << "I am a model duck" << std::endl;
     }
 };
 #endif // MODELDUCK_H
+
+ModelDuck::ModelDuck()
+{
+    flyBehavior = new FlyNoWay();
+    quackBehavior = new NormalQuack();
+}

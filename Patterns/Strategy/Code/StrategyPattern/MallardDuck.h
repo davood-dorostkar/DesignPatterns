@@ -6,8 +6,6 @@
 class MallardDuck : public Duck
 {
 public:
-FlyBehavior *flyBehavior;
-QuackBehavior *quackBehavior;
 MallardDuck();
 void display()
 {
