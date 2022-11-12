@@ -5,10 +5,9 @@
 class FlyWithWings : public FlyBehavior
 {
 private:
-
 public:
-    FlyWithWings();
-    ~FlyWithWings();
+    FlyWithWings(){}
+    ~FlyWithWings(){}
     void fly();
 };
 

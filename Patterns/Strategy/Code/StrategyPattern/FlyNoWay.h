@@ -6,13 +6,13 @@ class FlyNoWay : public FlyBehavior
 {
 private:
 public:
-    FlyNoWay();
-    ~FlyNoWay();
+    FlyNoWay(){}
+    ~FlyNoWay(){}
     void fly();
 };
 
 void FlyNoWay::fly()
 {
-    std::cout << "I cant fly" << std::endl;
+    std::cout << "I can't fly" << std::endl;
 }
 #endif // FLYNOWAY_H

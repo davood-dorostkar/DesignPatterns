@@ -5,8 +5,6 @@ class QuackBehavior
 private:
 
 public:
-    QuackBehavior();
-    ~QuackBehavior();
-    void quack();
+    virtual void quack()=0;
 };
 #endif // QUACKBEHAVIOR_H

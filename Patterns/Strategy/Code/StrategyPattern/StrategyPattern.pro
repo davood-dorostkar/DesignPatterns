@@ -31,6 +31,6 @@ HEADERS += \
     MallardDuck.h \
     ModelDuck.h \
     MuteQuack.h \
-    Quack.h \
+    NormalQuack.h \
     QuackBehavior.h \
     Squeak.h

@@ -5,9 +5,6 @@ class FlyBehavior
 private:
 
 public:
-    FlyBehavior();
-    ~FlyBehavior();
-    void fly();
+    virtual void fly()=0;
 };
-
 #endif // FLYBEHAVIOR_H

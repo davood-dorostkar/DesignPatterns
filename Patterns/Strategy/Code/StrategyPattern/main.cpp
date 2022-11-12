@@ -6,13 +6,15 @@
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    Duck mallard = new MallardDuck();
-    mallard.performQuack();
-    mallard.performFly();
+    Duck *mallard   = new MallardDuck();
+    mallard->display();
+    mallard->swim();
+    mallard->performFly();
+    mallard->performQuack();
 
-    Duck modelDuck = new ModelDuck();
-    modelDuck.performFly();
-    modelDuck.setFlyBehavior(new FlyRocketPowered());
-    modelDuck.performFly();
+//    Duck *modelDuck = new ModelDuck();
+//    modelDuck.performFly();
+//    modelDuck.setFlyBehavior(new FlyRocketPowered());
+//    modelDuck.performFly();
     return a.exec();
 }

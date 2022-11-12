@@ -6,8 +6,8 @@ class Squeak : public QuackBehavior
 {
 private:
 public:
-    Squeak();
-    ~Squeak();
+    Squeak(){}
+    ~Squeak(){}
     void quack();
 };
 
